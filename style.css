@@ -1,0 +1,69 @@
+* { box-sizing: border-box;}
+body{
+    background-color: black;
+}
+.funko{
+    position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  border: solid black;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.ojos {
+    position: relative;
+    height: 200px;
+    top: 100px;
+}
+
+.ojo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    height: 200px;
+    width: 200px;
+    border: 0.1em solid black;
+    border-radius: 25%;
+    background-color: black;
+}
+
+.pupila{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 160px;
+    background-color: white;
+    width: 160px;
+    border-radius: 50%;
+    top: 17px;
+
+}
+
+.ojo-izq {
+    left: 260px;
+}
+
+.ojo-der {
+    right: 260px;
+}
+
+.mini-ojo{
+    position: absolute;
+    background-color: aqua;
+    height: 70px;
+    width: 70px;
+    bottom:100px;
+    top: 45px;
+    left: 40px;
+    border-radius: 50%;
+}
+
