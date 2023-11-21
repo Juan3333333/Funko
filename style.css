@@ -6,7 +6,7 @@ body{
     position: absolute;
   left: 0;
   right: 0;
-  top: 50px;
+  top: 10px;
   bottom: 0;
   margin: 0 auto;
   width: 600px;
@@ -14,6 +14,7 @@ body{
   border: solid black;
   background-color: white;
   border-radius: 20%;
+  box-shadow: gray 2px 2px 30px;
 }
 
 .ojos {
@@ -27,7 +28,6 @@ body{
     left: 0;
     right: 0;
     margin: 0 auto;
-
     height: 200px;
     width: 200px;
     border: 0.1em solid black;
@@ -58,6 +58,7 @@ body{
 
 .mini-ojo{
     position: absolute;
+    box-shadow: blue 2px 2px 30px;
     background-color: aqua;
     height: 70px;
     width: 70px;
@@ -67,3 +68,76 @@ body{
     border-radius: 50%;
 }
 
+.nariz{
+    position: relative;
+    height: 70px;
+    top: 130px;
+}
+
+.triangulo{
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 250px;
+    border-left: 70px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+}
+
+.triangulo1{
+    position: absolute;
+    z-index: 12;
+    transform: rotate(-90deg);
+    left: 255px;
+    top:9px;
+    border-left: 60px solid gray;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+}
+
+.boca{
+    position: relative;
+    height: 70px;
+    top: 200px;
+}
+
+.sonrisa{
+    position: absolute;
+    background-color: black;
+    height: 30px;
+    width: 200px;
+    top: 20px;
+    left: 180px;
+    border-radius: 5px;
+}
+
+.rectangulo{
+    position: absolute;
+    left:10px;
+    background-color: gold;
+    height: 30px;
+    width: 10px;
+    top: 0px;
+}
+
+.cuello{
+    position: relative;
+    z-index: -12;
+    box-shadow: gray 2px 2px 30px;
+    top:170px;
+    left:185px; 
+    width: 200px;
+    height: 195px;
+    border: solid black;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.chaqueta{
+    position: relative;
+    background-color: blue;
+    border: solid black;
+    top:110px;
+    left:185px; 
+    width: 200px;
+    height: 100px;
+}
