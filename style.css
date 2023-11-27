@@ -1,6 +1,6 @@
 * { box-sizing: border-box;}
 body{
-    background-color: black;
+    background-color:red;
 }
 .funko{
     position: absolute;
@@ -68,6 +68,17 @@ body{
     border-radius: 50%;
 }
 
+.mini-ojo{
+    animation-name: mini-ojo;
+    animation-duration: 15s;
+}
+@keyframes mini-ojo{
+    0% {background-color: blue;}
+    25% {background-color: aqua;}
+    50% {background-color:darkblue;}
+    100% {background-color: darkturquoise;}
+}
+
 .nariz{
     position: relative;
     height: 70px;
@@ -89,7 +100,7 @@ body{
     transform: rotate(-90deg);
     left: 255px;
     top:9px;
-    border-left: 60px solid gray;
+    border-left: 60px solid black;
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent; 
 }
@@ -124,9 +135,9 @@ body{
     z-index: -12;
     box-shadow: gray 2px 2px 30px;
     top:170px;
-    left:185px; 
-    width: 200px;
-    height: 195px;
+    left:190px; 
+    width: 190px;
+    height: 175px;
     border: solid black;
     background-color: white;
     border-radius: 5%;
@@ -134,10 +145,170 @@ body{
 
 .chaqueta{
     position: relative;
-    background-color: blue;
-    border: solid black;
+    background-color:dodgerblue;
     top:110px;
-    left:185px; 
-    width: 200px;
-    height: 100px;
+    left: 90px; 
+    width: 400px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+
+.tira1{
+    bottom: 170px;
+    left:380px;
+    position: absolute;
+    height: 270px;
+    width: 150px;
+    border-radius: 15%;
+    background-color: dodgerblue;
+    transform: rotate(130deg);
+    z-index: 12;
+}
+
+.tira2{
+    bottom: 170px;
+    right:380px;
+    position: absolute;
+    height: 270px;
+    width: 150px;
+    border-radius: 15%;
+    background-color: dodgerblue;
+    transform: rotate(-130deg);
+    z-index: 12;
+}
+
+.manga-der{
+    z-index: -25;
+    bottom:100px;
+    position:relative;
+    border-radius: 15%;
+    border: 0.1em solid dodgerblue;
+    background-color: white;
+    height: 140px;
+    width: 140px;
+}
+
+.manga-der{
+    animation-name: manga-der;
+    animation-duration: 10s;
+}
+@keyframes manga-der{
+    0% {background-color: white;}
+    25% {background-color: aqua;}
+    50% {background-color:darkblue;}
+    100% {background-color: #ECCD6A ;}
+}
+
+.manga-izq{
+    z-index: -25;
+    border-radius: 15%;
+    bottom:100px;
+    position:relative;
+    border: 0.1em solid dodgerblue;
+    background-color: white;
+    height: 140px;
+    width: 140px;
+}
+
+.tiras1{
+    z-index: 15;
+    position: relative;
+    background-color: darkcyan;
+    height: 450px;
+    width: 50px;
+    right: -70px;
+}
+
+.tiras2{
+    z-index: 15;
+    position: relative;
+    background-color: darkcyan;
+    height: 450px;
+    width: 50px;
+    left: 268px;
+    bottom: 449px;
+}
+
+.ropa{
+    z-index: -12;
+    position: relative;
+    border: o.1em solid yellow;
+    background-color:purple;
+}
+.pantalon-der{
+    left: 90px;
+    top: 100px;
+    z-index: 12;
+    position: absolute;
+    background-color: black;
+    border-radius: 10%;
+    width: 190px;
+    height: 370px;
+}
+
+.pantalon-izq{
+    right: 90px;
+    top: 100px;
+    position: absolute;
+    background-color: black;
+    border-radius: 10%;
+    width: 190px;
+    height: 370px;
+}
+
+.pie-der{
+    background-color: #FD6C9E;
+    position: absolute;
+    height: 140px;
+    width: 190px;
+    top: 350px;
+    border-radius: 5%;
+}
+
+.pie-izq{
+    background-color: #FD6C9E;
+    position: absolute;
+    height: 140px;
+    width: 190px;
+    top: 350px;
+    border-radius: 5%;
+}
+
+.boton{
+    position: relative;
+}
+
+button{
+    right: 1400px;
+    position: absolute;
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+    );
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    font-size: 60px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 3s;
+}
+
+button span {
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 3s;
+}
+
+button:hover span{
+    background: none;
+}
+
+button:active{
+    transform: scale(0.9);
 }
