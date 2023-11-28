@@ -70,7 +70,7 @@ body{
 
 .mini-ojo{
     animation-name: mini-ojo;
-    animation-duration: 15s;
+    animation-duration: 5s;
 }
 @keyframes mini-ojo{
     0% {background-color: blue;}
@@ -186,12 +186,12 @@ body{
     border: 0.1em solid dodgerblue;
     background-color: white;
     height: 140px;
-    width: 140px;
+    width: 140px;                                                                                                                                                                                                                                         
 }
 
 .manga-der{
     animation-name: manga-der;
-    animation-duration: 10s;
+    animation-duration: 5s;
 }
 @keyframes manga-der{
     0% {background-color: white;}
@@ -298,6 +298,7 @@ button{
     transition: 3s;
 }
 
+
 button span {
     background-color: black;
     padding: 16px 24px;
@@ -312,3 +313,12 @@ button:hover span{
 button:active{
     transform: scale(0.9);
 }
+
+.gaster{
+    left: 1200px;
+    position: absolute;
+    height: 600px;
+    width: 600px;
+   
+}
+
