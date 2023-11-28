@@ -17,6 +17,7 @@ body{
   box-shadow: gray 2px 2px 30px;
 }
 
+
 .ojos {
     position: relative;
     height: 200px;
@@ -57,6 +58,7 @@ body{
 }
 
 .mini-ojo{
+    z-index: 1000;
     position: absolute;
     box-shadow: blue 2px 2px 30px;
     background-color: aqua;
@@ -70,13 +72,13 @@ body{
 
 .mini-ojo{
     animation-name: mini-ojo;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 @keyframes mini-ojo{
     0% {background-color: blue;}
     25% {background-color: aqua;}
     50% {background-color:darkblue;}
-    100% {background-color: darkturquoise;}
+    100% {background-color: darkturquoise; transform:scale(250%);}  
 }
 
 .nariz{
@@ -313,12 +315,3 @@ button:hover span{
 button:active{
     transform: scale(0.9);
 }
-
-.gaster{
-    left: 1200px;
-    position: absolute;
-    height: 600px;
-    width: 600px;
-   
-}
-
