@@ -1,6 +1,7 @@
 * { box-sizing: border-box;}
 body{
-    background-color:red;
+    background-size: cover;
+    background-image: url(Fotos/Na.jpg);
 }
 .funko{
     position: absolute;
@@ -130,6 +131,15 @@ body{
     height: 30px;
     width: 10px;
     top: 0px;
+    animation-name: rectangulo;
+    animation-duration: 5s;
+}
+
+@keyframes rectangulo{
+0% {background-color: yellowgreen;}
+25% {background-color: yellow;}
+50% {background-color:yellowgreen;}
+100% {background-color: gold;}  
 }
 
 .cuello{
@@ -282,7 +292,8 @@ body{
 }
 
 button{
-    right: 1400px;
+    top: -400px;
+    right: 1000px;
     position: absolute;
     border: 0;
     background-image: linear-gradient(
