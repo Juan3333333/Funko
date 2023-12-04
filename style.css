@@ -3,6 +3,14 @@ body{
     background-size: cover;
     background-image: url(Fotos/Na.jpg);
 }
+
+.sans{
+    position: absolute;
+    left: 1050px;
+    color: blue;
+    font-size: 50px;
+}
+
 .funko{
     position: absolute;
   left: 0;
@@ -73,13 +81,13 @@ body{
 
 .mini-ojo{
     animation-name: mini-ojo;
-    animation-duration: 1s;
+    animation-duration: 5s;
 }
 @keyframes mini-ojo{
-    0% {background-color: blue;}
-    25% {background-color: aqua;}
-    50% {background-color:darkblue;}
-    100% {background-color: darkturquoise; transform:scale(250%);}  
+    0% {background-color: blue; transform:scale(100%);}
+    25% {background-color: aqua; transform:scale(150%);}
+    50% {background-color:darkblue; transform:scale(170%);}
+    100% {background-color: darkturquoise; transform:scale(200%);}  
 }
 
 .nariz{
@@ -188,6 +196,9 @@ body{
     background-color: dodgerblue;
     transform: rotate(-130deg);
     z-index: 12;
+    animation-name: tira2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .manga-der{
@@ -198,18 +209,32 @@ body{
     border: 0.1em solid dodgerblue;
     background-color: white;
     height: 140px;
-    width: 140px;                                                                                                                                                                                                                                         
+    width: 140px;                                                                                                                                                                                                                                        
 }
 
-.manga-der{
-    animation-name: manga-der;
-    animation-duration: 5s;
-}
 @keyframes manga-der{
     0% {background-color: white;}
     25% {background-color: aqua;}
     50% {background-color:darkblue;}
     100% {background-color: #ECCD6A ;}
+}
+
+@keyframes tira2{
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25%{
+        transform: rotate(20eg)
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
 }
 
 .manga-izq{
@@ -326,3 +351,5 @@ button:hover span{
 button:active{
     transform: scale(0.9);
 }
+
+
